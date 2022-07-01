@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EJERCICIOS DE ARRAYS</title>
+	<style>
+		.mdi {
+			font-size: 2rem;
+		}
+
+		#tiempoTranscurrido {
+			font-size: 3rem;
+		}
+	</style>
+</head>
+<body bgcolor="#F5D6BA">
+	<h3><i> HORA: </i> <span id="hora" style="color:hsl(332, 98%, 48%);"></span><br>
+		<i> FECHA: </i> <span id="fecha" style="color:hsl(332, 98%, 48%);"></span></h3>
+	<hr>
+	<center>
+		<h2><U> CRONÓMETRO</U></h2>
+	<section class="section">
+		<div class="columns">
+			<div class="column has-text-centered">
+				<h2 id="tiempoTranscurrido"></h2>
+				<button class="button is-success is-large" id="Iniciar"><span class="mdi mdi-play">❤</span></button>
+				<button class="button is-success is-large" id="Pausar"><span class="pause">⏸</span></button>
+				<button class="button is-warning is-large" id="Detener"><span class="mdi mdi-stop">⏹</span></button>
+			</div>
+		</div>
+	</section>
+	</center>
+	<hr>
+	
+    <h2>Ejercicios de Arrays</h2>
+	<p>Intruduce numeros separados por comas</p>
+	<input type="text" id="numerosEjem"></input>
+	<input type="button" value="Cargar ejemplo" onclick="cargarEjemplo();"></input>
+	<br><br><input type="button" value="Calcular" onclick="calcular();">
+	<br><br><input type="button" value="Reiniciar" onclick="reiniciar();">
+	<p id="array"></p>
+	<p id="Resultado"></p>
+<hr>
+     <p id="frases"></p>
+<hr>
+    <form>
+    <input type="text" id="colores" placeholder="ingrese colores"></input><br>
+	<button onclick="agregaColor(event);">Insertar</button><br>
+    </form>
+	<div>
+		<ul id="listaC">
+			
+		</ul>
+	</div>
+
+        <script src="JS/practica.js"></script>
+	
+</body>
+</html>
